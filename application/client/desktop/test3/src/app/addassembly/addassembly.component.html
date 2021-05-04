@@ -1,0 +1,18 @@
+<h2 class="screen-align">AddAssembly</h2>
+<div id="template-ieuq" class="row">
+    <div id="template-i19a" class="cell">
+        <label id="template-i08v" class="label">name</label>
+        <input id="template-isid" [(ngModel)]="assembly.name" [ngModelOptions]="{standalone: true}"
+        class="input form-control" />
+        <button id="template-i56g" (click)="GpCreate()" class="button btn btn-primary">Send</button>
+    </div>
+    <div id="template-iv4x" class="cell">
+        <label id="template-it3g" class="label">descrption</label>
+        <div id="template-iu5w" class="">
+            <ng-select id="template-iclj" name="dynamicdropdown_template-iclj" [searchable]="true"
+            [virtualScroll]="true" [items]="manufactureitemArray" bindLabel="model"
+            bindValue="model" [(ngModel)]="assembly.description" [ngModelOptions]="{standalone: true}"
+            (click)="manufactureGpGetAllValues()" class="form-control"></ng-select>
+        </div>
+    </div>
+</div>
